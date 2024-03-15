@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Search from "./Components/Search";
+import FoodList from "./Components/FoodList";
 
 function App() {
   const [foodData, setFoodData]= useState([])
@@ -9,6 +10,7 @@ function App() {
 
 
     <Search foodData={foodData} setFoodData={setFoodData}/>
+   <FoodList foodData={foodData} />
     </div>
   );
 
